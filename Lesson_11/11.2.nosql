@@ -1,0 +1,21 @@
+2.1
+Через хаш
+HMSET ip_address ip170_1_10.133_count 0  //Создать значение
+HMSET ip_address ip170_1_10.132_count 0  //Создать значение
+HKEYS ip_address  //Получить все ключи
+HVALS ip_address  //Получить все значения
+HGET ip_address ip170_1_10.133_count  //Получить значение
+HSET ip_address ip170_1_10.133_count 1//Изменить значение
+HGET ip_address ip170_1_10.133_count
+
+
+Через значение
+SET ip170_1_10_133 0 //Задать значение
+GET ip170_1_10_133   //Получить значение
+INCR ip170_1_10_133  //Увеличить на 1 значение
+INCRBY ip170_1_10_133 2//Увеличить на 2 значение
+GET ip170_1_10_133
+
+2.2
+HSET name_to_email "Иван Иванов" "any@any.ru" //Хэш ФИО -> Емайл
+HSET email_to_name "any@any.ru" "Иван Иванов" //Хэш Емайл -> ФИО
